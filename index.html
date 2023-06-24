@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+  </head>
+  <body class="b1">
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <!--
+        <a class="navbar-brand" href="http://localhost:3000/">Dashboard</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      -->
+      
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link " href="http://localhost:3000/">Dashboard
+            </li>
+            <li class="nav-item"><a class="nav-link " href="index.html">Home
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="weather.html">Weather</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="aboutus1.html">About</a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+
+    <br /><br />
+
+    
+    <div class="form">
+      <div class="link">
+      <div class="name">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter name" />
+      </div>
+      
+      <div class="phone">
+        <label for="phone">Phone Number</label>
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="Enter Phone Number"
+        />
+      </div>
+    
+      <div class="bno">
+        <label for="bno">Boat Length</label>
+        <input
+          type="text"
+          name="bno"
+          id="bno"
+          placeholder="Enter Boat Length"
+        />
+      </div>
+      <!-- Email  -->
+      <div class="email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Write your email"
+        />
+      </div>
+      <!-- passWord -->
+      <div class="len">
+        <label for="password">Boat Number</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Boat length"
+        />
+      </div>
+      <div class="area">
+        <label for="Passcode">Passcode</label>
+        <input
+          type="password"
+          name="cpassword"
+          id="cpassword"
+          placeholder="Enter code"
+        />
+      </div>
+      <div class="eno">
+        <label for="password">Emergency Number</label>
+        <input
+          type="text"
+          name="eno"
+          id="eno"
+          placeholder="Enter emergency  number"
+        />
+      </div>
+      </div>
+
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="signUp()">Sign Up</button>
+      <!-- Sign In option -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

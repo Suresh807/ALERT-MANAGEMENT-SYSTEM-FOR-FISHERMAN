@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+  </head>
+  <body class="b1">
+  <br><br>
+    <div class="form">
+	<div class="name">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter name"
+        />
+      </div>
+	  <div class="phone">
+        <label for="phone">Phone Number</label>
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="Enter Phone Number"
+        />
+      </div>
+	  <div class="bno">
+        <label for="bno">Boat Number</label>
+        <input
+          type="text"
+          name="bno"
+          id="bno"
+          placeholder="Enter Boat Number"
+        />
+      </div>
+      <!-- Email  -->
+      <div class="email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Write your email"
+        />
+      </div>
+      <!-- passWord -->
+      <div class="pass">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter password"
+        />
+      </div>
+	  <div class="pass">
+        <label for="password">Confirm Password</label>
+        <input
+          type="password"
+          name="cpassword"
+          id="cpassword"
+          placeholder="Re-enter password"
+        />
+      </div>
+	  <div class="eno">
+        <label for="password">Emergency Contact Number</label>
+        <input
+          type="text"
+          name="eno"
+          id="eno"
+          placeholder="Enter emergency contact number"
+        />
+      </div>
+
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="signUp()">Sign Up</button>
+      <!-- Sign In option -->
+      <p>Already have an account ?</p>
+      <span><a href="signIn.html">Sign In</a></span>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
